@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 53;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B184A00278C83F60036001D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1849FF278C83F60036001D /* SettingsViewController.swift */; };
+		3B184A05278CB6D30036001D /* KeyboardShortcuts in Frameworks */ = {isa = PBXBuildFile; productRef = 3B184A04278CB6D30036001D /* KeyboardShortcuts */; };
+		3B200CAA27980D1D00CD83E6 /* VashLauncher.webloc in Resources */ = {isa = PBXBuildFile; fileRef = 3B200CA927980D1D00CD83E6 /* VashLauncher.webloc */; };
+		3B200CB52798112000CD83E6 /* VashLauncherAppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B200CB22798112000CD83E6 /* VashLauncherAppIcon.png */; };
+		3B200CBA2798118700CD83E6 /* VL-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B200CB92798118700CD83E6 /* VL-background.png */; };
+		3B200CBC2798119200CD83E6 /* VashLauncher.icns in Resources */ = {isa = PBXBuildFile; fileRef = 3B200CBB2798119200CD83E6 /* VashLauncher.icns */; };
+		3B26167E278EF1240036FC6B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26167D278EF1240036FC6B /* Settings.swift */; };
+		3B261680278EF9E80036FC6B /* UserDefaultsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B26167F278EF9E80036FC6B /* UserDefaultsWrapper.swift */; };
+		3B2C135D279295A3004E3915 /* InterfaceShell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2C135C279295A3004E3915 /* InterfaceShell.swift */; };
+		3B50EA78278AEEC30014731A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50EA77278AEEC30014731A /* AppDelegate.swift */; };
+		3B50EA7A278AEEC30014731A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50EA79278AEEC30014731A /* ViewController.swift */; };
+		3B50EA7C278AEEC40014731A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B50EA7B278AEEC40014731A /* Assets.xcassets */; };
+		3B50EA7F278AEEC40014731A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B50EA7D278AEEC40014731A /* Main.storyboard */; };
+		3B50EA87278AF1250014731A /* RunAppleScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50EA86278AF1250014731A /* RunAppleScript.swift */; };
+		3B785121279579B500610C38 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 3B785120279579B500610C38 /* LaunchAtLogin */; };
+		3B991429278DC78B0002A5EB /* InterfaceVash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B991428278DC78B0002A5EB /* InterfaceVash.swift */; };
+		3B99142B278DC79C0002A5EB /* InterfaceMc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B99142A278DC79C0002A5EB /* InterfaceMc.swift */; };
+		3B99142D278DC7B20002A5EB /* InterfacePwsh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B99142C278DC7B20002A5EB /* InterfacePwsh.swift */; };
+		3BDF6A86278B1F6200572327 /* HotKeysGlobal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDF6A85278B1F6200572327 /* HotKeysGlobal.swift */; };
+		3BF150242796AB490019BD58 /* RunVash.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 3BF150232796AB490019BD58 /* RunVash.applescript */; };
+		3BF150262796ABD40019BD58 /* RunMc.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 3BF150252796ABD40019BD58 /* RunMc.applescript */; };
+		3BF150282796AC2A0019BD58 /* RunPwsh.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 3BF150272796AC2A0019BD58 /* RunPwsh.applescript */; };
+		3BF1502A2796AC540019BD58 /* RunShell.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 3BF150292796AC540019BD58 /* RunShell.applescript */; };
+		3BF1502D2796C7E50019BD58 /* VashLauncher-screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF1502C2796C7E50019BD58 /* VashLauncher-screenshot.png */; };
+		3BF150332796DF940019BD58 /* Settings-shell.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF1502F2796DF940019BD58 /* Settings-shell.png */; };
+		3BF150342796DF940019BD58 /* Settings-pwsh.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF150302796DF940019BD58 /* Settings-pwsh.png */; };
+		3BF150352796DF940019BD58 /* Settings-vash.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF150312796DF940019BD58 /* Settings-vash.png */; };
+		3BF150362796DF940019BD58 /* Settings-mc.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF150322796DF940019BD58 /* Settings-mc.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B1849FF278C83F60036001D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		3B200CA927980D1D00CD83E6 /* VashLauncher.webloc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = VashLauncher.webloc; sourceTree = "<group>"; };
+		3B200CB22798112000CD83E6 /* VashLauncherAppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VashLauncherAppIcon.png; sourceTree = "<group>"; };
+		3B200CB92798118700CD83E6 /* VL-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VL-background.png"; sourceTree = "<group>"; };
+		3B200CBB2798119200CD83E6 /* VashLauncher.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = VashLauncher.icns; sourceTree = "<group>"; };
+		3B26167D278EF1240036FC6B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		3B26167F278EF9E80036FC6B /* UserDefaultsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsWrapper.swift; sourceTree = "<group>"; };
+		3B2C135C279295A3004E3915 /* InterfaceShell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceShell.swift; sourceTree = "<group>"; };
+		3B50EA74278AEEC30014731A /* VashLauncher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VashLauncher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B50EA77278AEEC30014731A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B50EA79278AEEC30014731A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3B50EA7B278AEEC40014731A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B50EA7E278AEEC40014731A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B50EA80278AEEC40014731A /* VashLauncher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VashLauncher.entitlements; sourceTree = "<group>"; };
+		3B50EA86278AF1250014731A /* RunAppleScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunAppleScript.swift; sourceTree = "<group>"; };
+		3B7851222795DADC00610C38 /* version */ = {isa = PBXFileReference; lastKnownFileType = text; path = version; sourceTree = "<group>"; };
+		3B7851232795DAE500610C38 /* makedmg.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = makedmg.sh; sourceTree = "<group>"; };
+		3B84358727981EEA00974B64 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		3B84358827981EF900974B64 /* dmgset.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = dmgset.py; sourceTree = "<group>"; };
+		3B84358927981F0F00974B64 /* makeicns.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = makeicns.sh; sourceTree = "<group>"; };
+		3B991428278DC78B0002A5EB /* InterfaceVash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceVash.swift; sourceTree = "<group>"; };
+		3B99142A278DC79C0002A5EB /* InterfaceMc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceMc.swift; sourceTree = "<group>"; };
+		3B99142C278DC7B20002A5EB /* InterfacePwsh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfacePwsh.swift; sourceTree = "<group>"; };
+		3BDF6A85278B1F6200572327 /* HotKeysGlobal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeysGlobal.swift; sourceTree = "<group>"; };
+		3BF150232796AB490019BD58 /* RunVash.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = RunVash.applescript; sourceTree = "<group>"; };
+		3BF150252796ABD40019BD58 /* RunMc.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = RunMc.applescript; sourceTree = "<group>"; };
+		3BF150272796AC2A0019BD58 /* RunPwsh.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = RunPwsh.applescript; sourceTree = "<group>"; };
+		3BF150292796AC540019BD58 /* RunShell.applescript */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.applescript; path = RunShell.applescript; sourceTree = "<group>"; };
+		3BF1502C2796C7E50019BD58 /* VashLauncher-screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "VashLauncher-screenshot.png"; sourceTree = "<group>"; };
+		3BF1502E2796C80A0019BD58 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3BF1502F2796DF940019BD58 /* Settings-shell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings-shell.png"; sourceTree = "<group>"; };
+		3BF150302796DF940019BD58 /* Settings-pwsh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings-pwsh.png"; sourceTree = "<group>"; };
+		3BF150312796DF940019BD58 /* Settings-vash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings-vash.png"; sourceTree = "<group>"; };
+		3BF150322796DF940019BD58 /* Settings-mc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Settings-mc.png"; sourceTree = "<group>"; };
+		3BFC1B74278AF872001CE1C3 /* TODO.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TODO.md; sourceTree = "<group>"; };
+		3BFC1B75278B08CE001CE1C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B50EA71278AEEC30014731A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B785121279579B500610C38 /* LaunchAtLogin in Frameworks */,
+				3B184A05278CB6D30036001D /* KeyboardShortcuts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B184A03278CB6D30036001D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B50EA6B278AEEC30014731A = {
+			isa = PBXGroup;
+			children = (
+				3BF1502B2796C6C60019BD58 /* Doc */,
+				3BFC1B74278AF872001CE1C3 /* TODO.md */,
+				3B7851222795DADC00610C38 /* version */,
+				3B84358927981F0F00974B64 /* makeicns.sh */,
+				3B7851232795DAE500610C38 /* makedmg.sh */,
+				3B84358827981EF900974B64 /* dmgset.py */,
+				3B84358727981EEA00974B64 /* Makefile */,
+				3B50EA76278AEEC30014731A /* VashLauncher */,
+				3B50EA75278AEEC30014731A /* Products */,
+				3B184A03278CB6D30036001D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3B50EA75278AEEC30014731A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B50EA74278AEEC30014731A /* VashLauncher.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B50EA76278AEEC30014731A /* VashLauncher */ = {
+			isa = PBXGroup;
+			children = (
+				3B50EA77278AEEC30014731A /* AppDelegate.swift */,
+				3B50EA79278AEEC30014731A /* ViewController.swift */,
+				3B50EA86278AF1250014731A /* RunAppleScript.swift */,
+				3BDF6A85278B1F6200572327 /* HotKeysGlobal.swift */,
+				3B26167F278EF9E80036FC6B /* UserDefaultsWrapper.swift */,
+				3B1849FF278C83F60036001D /* SettingsViewController.swift */,
+				3B26167D278EF1240036FC6B /* Settings.swift */,
+				3B991428278DC78B0002A5EB /* InterfaceVash.swift */,
+				3B99142A278DC79C0002A5EB /* InterfaceMc.swift */,
+				3B99142C278DC7B20002A5EB /* InterfacePwsh.swift */,
+				3B2C135C279295A3004E3915 /* InterfaceShell.swift */,
+				3B50EA7B278AEEC40014731A /* Assets.xcassets */,
+				3B50EA7D278AEEC40014731A /* Main.storyboard */,
+				3B50EA80278AEEC40014731A /* VashLauncher.entitlements */,
+				3BFC1B75278B08CE001CE1C3 /* Info.plist */,
+				3BF150222796AAD50019BD58 /* AppleScripts */,
+			);
+			path = VashLauncher;
+			sourceTree = "<group>";
+		};
+		3BF150222796AAD50019BD58 /* AppleScripts */ = {
+			isa = PBXGroup;
+			children = (
+				3BF150232796AB490019BD58 /* RunVash.applescript */,
+				3BF150252796ABD40019BD58 /* RunMc.applescript */,
+				3BF150272796AC2A0019BD58 /* RunPwsh.applescript */,
+				3BF150292796AC540019BD58 /* RunShell.applescript */,
+			);
+			path = AppleScripts;
+			sourceTree = "<group>";
+		};
+		3BF1502B2796C6C60019BD58 /* Doc */ = {
+			isa = PBXGroup;
+			children = (
+				3BF1502E2796C80A0019BD58 /* README.md */,
+				3BF1502C2796C7E50019BD58 /* VashLauncher-screenshot.png */,
+				3BF150322796DF940019BD58 /* Settings-mc.png */,
+				3BF150302796DF940019BD58 /* Settings-pwsh.png */,
+				3BF1502F2796DF940019BD58 /* Settings-shell.png */,
+				3BF150312796DF940019BD58 /* Settings-vash.png */,
+				3B200CB92798118700CD83E6 /* VL-background.png */,
+				3B200CBB2798119200CD83E6 /* VashLauncher.icns */,
+				3B200CB22798112000CD83E6 /* VashLauncherAppIcon.png */,
+				3B200CA927980D1D00CD83E6 /* VashLauncher.webloc */,
+			);
+			path = Doc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B50EA73278AEEC30014731A /* VashLauncher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B50EA83278AEEC40014731A /* Build configuration list for PBXNativeTarget "VashLauncher" */;
+			buildPhases = (
+				3B50EA70278AEEC30014731A /* Sources */,
+				3B50EA71278AEEC30014731A /* Frameworks */,
+				3B50EA72278AEEC30014731A /* Resources */,
+				3BABE2F42795780300D9C40B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VashLauncher;
+			packageProductDependencies = (
+				3B184A04278CB6D30036001D /* KeyboardShortcuts */,
+				3B785120279579B500610C38 /* LaunchAtLogin */,
+			);
+			productName = VashLauncher;
+			productReference = 3B50EA74278AEEC30014731A /* VashLauncher.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B50EA6C278AEEC30014731A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					3B50EA73278AEEC30014731A = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 3B50EA6F278AEEC30014731A /* Build configuration list for PBXProject "VashLauncher" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3B50EA6B278AEEC30014731A;
+			packageReferences = (
+				3BDF6A82278B1EC000572327 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */,
+				3B78511F279579B500610C38 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */,
+			);
+			productRefGroup = 3B50EA75278AEEC30014731A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B50EA73278AEEC30014731A /* VashLauncher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B50EA72278AEEC30014731A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B200CBC2798119200CD83E6 /* VashLauncher.icns in Resources */,
+				3BF1502D2796C7E50019BD58 /* VashLauncher-screenshot.png in Resources */,
+				3B200CBA2798118700CD83E6 /* VL-background.png in Resources */,
+				3B200CAA27980D1D00CD83E6 /* VashLauncher.webloc in Resources */,
+				3BF150362796DF940019BD58 /* Settings-mc.png in Resources */,
+				3B50EA7C278AEEC40014731A /* Assets.xcassets in Resources */,
+				3B200CB52798112000CD83E6 /* VashLauncherAppIcon.png in Resources */,
+				3BF150352796DF940019BD58 /* Settings-vash.png in Resources */,
+				3BF150342796DF940019BD58 /* Settings-pwsh.png in Resources */,
+				3B50EA7F278AEEC40014731A /* Main.storyboard in Resources */,
+				3BF150332796DF940019BD58 /* Settings-shell.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BABE2F42795780300D9C40B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${BUILT_PRODUCTS_DIR}/LaunchAtLogin_LaunchAtLogin.bundle/Contents/Resources/copy-helper-swiftpm.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B50EA70278AEEC30014731A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B50EA87278AF1250014731A /* RunAppleScript.swift in Sources */,
+				3BF150282796AC2A0019BD58 /* RunPwsh.applescript in Sources */,
+				3B50EA7A278AEEC30014731A /* ViewController.swift in Sources */,
+				3BF150262796ABD40019BD58 /* RunMc.applescript in Sources */,
+				3B991429278DC78B0002A5EB /* InterfaceVash.swift in Sources */,
+				3BF150242796AB490019BD58 /* RunVash.applescript in Sources */,
+				3BF1502A2796AC540019BD58 /* RunShell.applescript in Sources */,
+				3B99142D278DC7B20002A5EB /* InterfacePwsh.swift in Sources */,
+				3BDF6A86278B1F6200572327 /* HotKeysGlobal.swift in Sources */,
+				3B99142B278DC79C0002A5EB /* InterfaceMc.swift in Sources */,
+				3B2C135D279295A3004E3915 /* InterfaceShell.swift in Sources */,
+				3B261680278EF9E80036FC6B /* UserDefaultsWrapper.swift in Sources */,
+				3B26167E278EF1240036FC6B /* Settings.swift in Sources */,
+				3B50EA78278AEEC30014731A /* AppDelegate.swift in Sources */,
+				3B184A00278C83F60036001D /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3B50EA7D278AEEC40014731A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B50EA7E278AEEC40014731A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B50EA81278AEEC40014731A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B50EA82278AEEC40014731A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3B50EA84278AEEC40014731A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VashLauncher/VashLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VashLauncher/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "VashLauncher needs access to Terminal.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ec.VashLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3B50EA85278AEEC40014731A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = VashLauncher/VashLauncher.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VashLauncher/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "VashLauncher needs access to Terminal.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = org.ec.VashLauncher;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B50EA6F278AEEC30014731A /* Build configuration list for PBXProject "VashLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B50EA81278AEEC40014731A /* Debug */,
+				3B50EA82278AEEC40014731A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B50EA83278AEEC40014731A /* Build configuration list for PBXNativeTarget "VashLauncher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B50EA84278AEEC40014731A /* Debug */,
+				3B50EA85278AEEC40014731A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B78511F279579B500610C38 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		3BDF6A82278B1EC000572327 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/KeyboardShortcuts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B184A04278CB6D30036001D /* KeyboardShortcuts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3BDF6A82278B1EC000572327 /* XCRemoteSwiftPackageReference "KeyboardShortcuts" */;
+			productName = KeyboardShortcuts;
+		};
+		3B785120279579B500610C38 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B78511F279579B500610C38 /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
+			productName = LaunchAtLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3B50EA6C278AEEC30014731A /* Project object */;
+}

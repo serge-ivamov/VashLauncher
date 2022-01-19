@@ -1,0 +1,14 @@
+# macos
+.DS_Store
+Icon
+._*
+
+# xcode
+build
+Makefile.inc
+
+## User settings
+xcuserdata
+
+# release
+*.dmg

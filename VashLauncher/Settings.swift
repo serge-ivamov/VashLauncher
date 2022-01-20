@@ -35,13 +35,19 @@ var udefShellEnvironment_1 = ""
 var udefShellCommand_1 = ""
 
 func UpdateStatusBarMenus() {
-    let hkvash1 = KeyboardShortcuts.getShortcut(for: .toggleRunVash_1).map { "\($0)" } ?? ""
-    let hkmc1 = KeyboardShortcuts.getShortcut(for: .toggleRunMc_1).map { "\($0)" } ?? ""
-    let hkpwsh1 = KeyboardShortcuts.getShortcut(for: .toggleRunPwsh_1).map { "\($0)" } ?? ""
-    let hkshell1 = KeyboardShortcuts.getShortcut(for: .toggleRunShell_1).map { "\($0)" } ?? ""
-    let hkeys: [String] = [hkvash1, hkmc1, hkpwsh1, hkshell1]
+//    let hkvash1 = KeyboardShortcuts.getShortcut(for: .toggleRunVash_1).map { "\($0)" } ?? ""
+//    let hkmc1 = KeyboardShortcuts.getShortcut(for: .toggleRunMc_1).map { "\($0)" } ?? ""
+//    let hkpwsh1 = KeyboardShortcuts.getShortcut(for: .toggleRunPwsh_1).map { "\($0)" } ?? ""
+//    let hkshell1 = KeyboardShortcuts.getShortcut(for: .toggleRunShell_1).map { "\($0)" } ?? ""
+    let hkvash1 = KeyboardShortcuts.getShortcut(for: .toggleRunVash_1)
+    let hkmc1 = KeyboardShortcuts.getShortcut(for: .toggleRunMc_1)
+    let hkpwsh1 = KeyboardShortcuts.getShortcut(for: .toggleRunPwsh_1)
+    let hkshell1 = KeyboardShortcuts.getShortcut(for: .toggleRunShell_1)
+    let hkeys = [hkvash1, hkmc1, hkpwsh1, hkshell1]
     for i in 0..<menuItems.count {
-        menu.item(at: i)?.title = menuItems[i] + "   " + hkeys[i]
+        // menu.item(at: i)?.title = menuItems[i] + "   " + hkeys[i]
+        menu.item(at: i)?.title = menuItems[i]
+        menu.item(at: i)?.setShortcut(hkeys[i])
     }
 } // UpdateStatusBarMenus()
 
